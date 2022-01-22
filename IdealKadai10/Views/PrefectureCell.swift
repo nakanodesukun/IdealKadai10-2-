@@ -24,7 +24,13 @@ class PrefectureCell: UITableViewCell, ConfigiureDelegate {
     
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var numeLabel: UILabel!
-    
+
+    func configiure(title: String, detile: Int) {
+        nameLabel.text = title
+        numeLabel.text = "\(detile + 1)番目の都道府県です"
+        let color: [UIColor] = [.red, .green, .blue]
+        contentView.backgroundColor = color[detile % color.count]
+    }
     
 }
 
