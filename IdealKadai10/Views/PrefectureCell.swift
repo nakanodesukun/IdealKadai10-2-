@@ -14,17 +14,17 @@ class PrefectureCell: UITableViewCell, ConfigiureDelegate {
         let color: [UIColor] = [.red, .green, .blue]
         contentView.backgroundColor = color[detile % color.count]
     }
-
+    
     static let identifier = "PrefectureCell"
-
-   static func nib() -> UINib {
-          return UINib(nibName: "PrefectureCell", bundle: nil)
-      }
-
-
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "PrefectureCell", bundle: nil)
+    }
+    
+    
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var numeLabel: UILabel!
-
-   
+    
+    
 }
 

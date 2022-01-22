@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet private weak var tableView: UITableView!
     // 都道府県のデータを呼び出す
-   private let prefectur = PrefectureData.prefecures
+    private let prefectur = PrefectureData.prefecures
 
     override func viewDidLoad() {
         super.viewDidLoad()
