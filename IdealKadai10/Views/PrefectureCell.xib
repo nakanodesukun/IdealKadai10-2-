@@ -38,7 +38,7 @@
                 <outlet property="nameLabel" destination="2bY-dg-zuY" id="OB2-GU-mCb"/>
                 <outlet property="numeLabel" destination="8YW-M4-7sF" id="fiN-hE-yNd"/>
             </connections>
-            <point key="canvasLocation" x="234.05797101449278" y="6.6964285714285712"/>
+            <point key="canvasLocation" x="193" y="-40"/>
         </tableViewCell>
     </objects>
 </document>

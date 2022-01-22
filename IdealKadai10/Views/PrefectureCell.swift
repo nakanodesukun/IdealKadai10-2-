@@ -7,7 +7,14 @@
 
 import UIKit
 
-class PrefectureCell: UITableViewCell {
+class PrefectureCell: UITableViewCell, ConfigiureDelegate {
+    func configiure(title: String, detile: Int) {
+        nameLabel.text = title
+        numeLabel.text = "\(detile + 1)番目の都道府県です"
+        let color: [UIColor] = [.red, .green, .blue]
+        contentView.backgroundColor = color[detile % color.count]
+    }
+
     static let identifier = "PrefectureCell"
 
    static func nib() -> UINib {
@@ -18,12 +25,6 @@ class PrefectureCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var numeLabel: UILabel!
 
-    func configure(title: String, detile: Int) {
-        nameLabel.text = title
-        numeLabel.text = "\(detile + 1)番目の都道府県です"
-        let color: [UIColor] = [.red, .green, .blue]
-        contentView.backgroundColor = color[detile % color.count]
-    }
-
+   
 }
 

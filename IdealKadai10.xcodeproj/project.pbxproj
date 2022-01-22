@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9589155E279BEBC300A814D2 /* ConfigiureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589155D279BEBC300A814D2 /* ConfigiureDelegate.swift */; };
 		95C52EE7279AB28500D59E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C52EE6279AB28500D59E15 /* AppDelegate.swift */; };
 		95C52EE9279AB28500D59E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C52EE8279AB28500D59E15 /* SceneDelegate.swift */; };
 		95C52EEB279AB28500D59E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C52EEA279AB28500D59E15 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9589155D279BEBC300A814D2 /* ConfigiureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigiureDelegate.swift; sourceTree = "<group>"; };
 		95C52EE3279AB28500D59E15 /* IdealKadai10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdealKadai10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C52EE6279AB28500D59E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95C52EE8279AB28500D59E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9589155F279BEE1C00A814D2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9589155D279BEBC300A814D2 /* ConfigiureDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		95C52EDA279AB28500D59E15 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 				95C52EE6279AB28500D59E15 /* AppDelegate.swift */,
 				95C52EE8279AB28500D59E15 /* SceneDelegate.swift */,
 				95C52EF4279AB28600D59E15 /* Info.plist */,
+				9589155F279BEE1C00A814D2 /* Protocol */,
 				95D6A5FB279BCCAD00612783 /* Models */,
 				95D6A5FD279BD60600612783 /* Views */,
 				95D6A5FC279BCDFB00612783 /* Controller */,
@@ -185,6 +196,7 @@
 				95C52F00279AB39A00D59E15 /* PrefectureCell.swift in Sources */,
 				95C52EE7279AB28500D59E15 /* AppDelegate.swift in Sources */,
 				95C52EE9279AB28500D59E15 /* SceneDelegate.swift in Sources */,
+				9589155E279BEBC300A814D2 /* ConfigiureDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

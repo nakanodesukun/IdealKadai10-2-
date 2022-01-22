@@ -8,8 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
-    @IBOutlet private weak var tableView: UITableView!
 
+    @IBOutlet private weak var tableView: UITableView!
+    // 都道府県のデータを呼び出す
    private let prefectur = PrefectureData.prefecures
 
     override func viewDidLoad() {
@@ -22,7 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PrefectureCell.identifier, for: indexPath) as! PrefectureCell
-        cell.configure(title: prefectur[indexPath.row], detile: indexPath.row)
+        cell.configiure(title:  prefectur[indexPath.row], detile: indexPath.row)
         return cell
     }
 
